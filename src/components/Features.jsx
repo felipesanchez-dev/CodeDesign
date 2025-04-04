@@ -41,6 +41,7 @@ export const BentoTilt = ({ children, className = "" }) => {
 export const BentoCard = ({ src, title, description, isComingSoon }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
+
   const hoverButtonRef = useRef(null);
 
   const handleMouseMove = (event) => {
@@ -65,6 +66,9 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
+
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -72,27 +76,6 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
             <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
           )}
         </div>
-
-        {isComingSoon && (
-          <div
-            ref={hoverButtonRef}
-            onMouseMove={handleMouseMove}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
-          >
-            {/* Radial gradient hover effect */}
-            <div
-              className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
-              style={{
-                opacity: hoverOpacity,
-                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
-              }}
-            />
-            <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
-          </div>
-        )}
       </div>
     </div>
   );
@@ -102,13 +85,42 @@ const Features = () => (
   <section className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+        <p className="font-circular-web text-lg text-blue-50 font-bold">
+          En CodeDesign
         </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+        <p className="font-circular-web text-lg text-blue-50 opacity-50">
+          convertimos ideas en soluciones tecnológicas innovadoras. Somos una
+          empresa dedicada al desarrollo de software a medida, diseño web y
+          optimización digital, ayudando a empresas y emprendedores a potenciar
+          su presencia en el mundo digital. Nos apasiona la tecnología y el
+          diseño, por eso cada proyecto que creamos no solo es funcional, sino
+          que también está optimizado para ofrecer la mejor experiencia de
+          usuario. Desde el desarrollo de plataformas empresariales hasta sitios
+          web dinámicos y automatización de procesos, trabajamos con las últimas
+          herramientas y metodologías para garantizar calidad, eficiencia y
+          escalabilidad.
+        </p>
+        <br />
+        <p className="font-circular-web text-lg text-blue-50 font-bold">
+          ¿Por qué elegirnos?
+        </p>
+        <p className="font-circular-web text-lg text-blue-50 opacity-50">
+          🔹 <span className="font-bold">Soluciones personalizadas:</span> Nos
+          adaptamos a tus necesidades para crear productos a la medida. <br />
+          🔹 <span className="font-bold">Diseño moderno y eficiente:</span>{" "}
+          Interfaces atractivas y usabilidad optimizada. <br />
+          🔹 <span className="font-bold">Tecnología de vanguardia:</span> Usamos
+          las herramientas más avanzadas para un desarrollo robusto y seguro.
+          <br />
+          🔹 <span className="font-bold">Compromiso y excelencia:</span> Cada
+          línea de código refleja nuestra pasión y dedicación.
+        </p>
+        <br />
+        <p className="font-circular-web text-lg text-blue-50 font-bold">
+          No solo creamos software; diseñamos experiencias digitales que
+          impulsan el éxito <br />
+          Si estás listo para llevar tu empresa al siguiente nivel, ¡hagámoslo
+          realidad juntos!.
         </p>
       </div>
 
@@ -117,10 +129,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              Nuestros<b> Servicios </b>
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="En CodeDesign, tenemos soluciones integrales para impulsar tu negocio en el mundo digital."
           isComingSoon
         />
       </BentoTilt>
@@ -131,10 +143,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                Desarrollo <b>Web</b>
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Creamos sitios web responsivos y modernos, optimizados para brindar una experiencia digital excepcional. Tu presencia en línea se transforma en una herramienta de éxito."
             isComingSoon
           />
         </BentoTilt>
@@ -144,10 +156,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                Aplicaciones <b>Multiplataforma</b>
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Lleva tus ideas a cualquier dispositivo. Desarrollamos soluciones que funcionan de forma consistente y eficaz en diferentes plataformas, garantizando rendimiento y accesibilidad."
             isComingSoon
           />
         </BentoTilt>
@@ -157,31 +169,40 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                Software
+                <b> a la Medida</b>
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Cada negocio es único. Creamos soluciones personalizadas que se adaptan a las necesidades específicas de tu empresa, impulsando eficiencia, crecimiento y competitividad."
             isComingSoon
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
-            </h1>
-
-            <TiLocationArrow className="m-5 scale-[5] self-end" />
-          </div>
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+          <BentoCard
+            src="videos/feature-5.mp4"
+            title={
+              <>
+                DISEÑO <b>UI/UX</b>
+              </>
+            }
+            description="No solo se trata de tecnología, sino también de experiencia.
+              Diseñamos interfaces intuitivas y visualmente atractivas que
+              aseguran una interacción fluida y placentera para tus usuarios."
+            isComingSoon
+          />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+          <BentoCard
+            src="videos/feature-6.mp4"
+            title={
+              <>
+                Integración y <b>Automatización</b>
+              </>
+            }
+            description="Optimiza tus procesos con sistemas integrados y soluciones de automatización, permitiéndote centrarte en lo que realmente importa: el crecimiento de tu negocio."
+            isComingSoon
           />
         </BentoTilt>
       </div>
