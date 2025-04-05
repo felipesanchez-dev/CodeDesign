@@ -1,10 +1,9 @@
-import footerImg from "../../public/img/footerImg.jpg";
 const Footer = () => {
   return (
     <footer className="bg-white lg:grid lg:grid-cols-5">
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
         <img
-          src={footerImg}
+          src="/img/footerImg.jpg"
           alt="Footer Image"
           className="absolute inset-0 h-full w-full object-cover"
         />

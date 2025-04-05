@@ -17,7 +17,10 @@ const Contact = () => {
   }, [state.succeeded]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-4 py-16">
+    <div
+      id="contact"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-4 py-16"
+    >
       <div className="w-full max-w-3xl bg-white text-black rounded-2xl shadow-xl p-8 md:p-12">
         {showSuccess ? (
           <div className="text-center py-16">
