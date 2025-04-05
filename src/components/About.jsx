@@ -29,11 +29,9 @@ const About = () => {
   return (
     <div id="acerca de" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
-        <p className="font-general text-sm uppercase md:text-[50px]">
-          <h2>
-            Bienvenido a <span style={{ fontWeight: "bold" }}>CodeDesign</span>
-          </h2>
-        </p>
+        <h2 className="font-general text-sm uppercase md:text-[50px]">
+          Bienvenido a <span style={{ fontWeight: "bold" }}>CodeDesign</span>
+        </h2>
 
         <AnimatedTitle
           title="Innovación y Tecnología <br /> a Tu <b>Medida</b>"
