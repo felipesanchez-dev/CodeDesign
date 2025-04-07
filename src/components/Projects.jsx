@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { TiLocationArrow } from "react-icons/ti";
+import OpenProjects from "./OpenProjects";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -92,7 +92,7 @@ const Projects = () => (
         </p>
       </div>
 
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
+      <BentoTilt className="border-hsla relative mb-7 h-16 w-full overflow-hidden rounded-md md:h-[65vh]">
         <a href="https://www.fundacionsandimas.org/">
           <BentoCard
             src="videos/cliente-1.mp4"
@@ -106,6 +106,7 @@ const Projects = () => (
           />
         </a>
       </BentoTilt>
+      <OpenProjects />
     </div>
   </section>
 );
