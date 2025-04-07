@@ -81,9 +81,17 @@ const Portfolio = () => {
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="/img/open-6.png"
+              ImageHref="/img/open-5.png"
               category="movil"
               title="App del clima"
+              button="Ver codigo"
+              buttonHref="https://github.com/felipesanchez-dev/Pronostico-del-Clima"
+              showCard={showCard}
+            />
+            <PortfolioCard
+              ImageHref="/img/open-6.png"
+              category="movil"
+              title="App de noticias"
               button="Ver codigo"
               buttonHref="https://github.com/felipesanchez-dev/app-noticias"
               showCard={showCard}
