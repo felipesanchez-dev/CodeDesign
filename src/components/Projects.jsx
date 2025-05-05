@@ -85,7 +85,7 @@ const Projects = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50 font-bold">
-          Nuestros Clientes
+          Mis Clientes
         </p>
         <p className="font-circular-web text-lg text-blue-50 opacity-50">
           Construyendo soluciones, creando confianza.
@@ -93,15 +93,19 @@ const Projects = () => (
       </div>
 
       <BentoTilt className="border-hsla relative mb-7 h-16 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <a href="https://www.fundacionsandimas.org/">
+        <a
+          href="https://www.fundacionsandimas.org/"
+          target="_blank"
+          rel="noopener noreferrer">
+          {" "}
           <BentoCard
             src="videos/cliente-1.mp4"
             title={
               <>
-                FUNDACIÓN<b> SAN DIMAS</b>
+                FUNDACIÓN<b> SAN DIMAS</b>{" "}
               </>
             }
-            description="Nuestro aporte:  Desarrollo y administración de su página web, optimizando su presencia digital y facilitando la gestión de su contenido"
+            description="Mi aporte: Desarrollo y administración de su página web, optimizando su presencia digital y facilitando la gestión de su contenido."
             isComingSoon
           />
         </a>

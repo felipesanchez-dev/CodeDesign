@@ -86,41 +86,40 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50 font-bold">
-          En CodeDesign
+          Mi Enfoque como Desarrollador
         </p>
         <p className="font-circular-web text-lg text-blue-50 opacity-50">
-          convertimos ideas en soluciones tecnológicas innovadoras. Somos una
-          empresa dedicada al desarrollo de software a medida, diseño web y
-          optimización digital, ayudando a empresas y emprendedores a potenciar
-          su presencia en el mundo digital. Nos apasiona la tecnología y el
-          diseño, por eso cada proyecto que creamos no solo es funcional, sino
-          que también está optimizado para ofrecer la mejor experiencia de
-          usuario. Desde el desarrollo de plataformas empresariales hasta sitios
-          web dinámicos y automatización de procesos, trabajamos con las últimas
-          herramientas y metodologías para garantizar calidad, eficiencia y
-          escalabilidad.
+          Convierto ideas en soluciones tecnológicas innovadoras. Soy un
+          desarrollador dedicado al software a medida, diseño web y optimización
+          digital, ayudando a empresas y emprendedores a potenciar su presencia
+          en el mundo digital. Me apasiona la tecnología y el diseño, por eso
+          cada proyecto que creo no solo es funcional, sino que también está
+          optimizado para ofrecer la mejor experiencia de usuario. Desde el
+          desarrollo de plataformas empresariales hasta sitios web dinámicos y
+          automatización de procesos, trabajo con las últimas herramientas y
+          metodologías para garantizar calidad, eficiencia y escalabilidad.
         </p>
         <br />
         <p className="font-circular-web text-lg text-blue-50 font-bold">
-          ¿Por qué elegirnos?
+          ¿Por qué elegirme?
         </p>
         <p className="font-circular-web text-lg text-blue-50 opacity-50">
-          🔹 <span className="font-bold">Soluciones personalizadas:</span> Nos
-          adaptamos a tus necesidades para crear productos a la medida. <br />
+          🔹 <span className="font-bold">Soluciones personalizadas:</span> Me
+          adapto a tus necesidades para crear productos a la medida. <br />
           🔹 <span className="font-bold">Diseño moderno y eficiente:</span>{" "}
-          Interfaces atractivas y usabilidad optimizada. <br />
-          🔹 <span className="font-bold">Tecnología de vanguardia:</span> Usamos
-          las herramientas más avanzadas para un desarrollo robusto y seguro.
+          Interfaces atractivas y usabilidad optimizada. <br /> 🔹{" "}
+          <span className="font-bold">Tecnología de vanguardia:</span> Uso las
+          herramientas más avanzadas para un desarrollo robusto y seguro.
           <br />
           🔹 <span className="font-bold">Compromiso y excelencia:</span> Cada
-          línea de código refleja nuestra pasión y dedicación.
+          línea de código refleja mi pasión y dedicación.
         </p>
         <br />
         <p className="font-circular-web text-lg text-blue-50 font-bold">
-          No solo creamos software; diseñamos experiencias digitales que
-          impulsan el éxito <br />
-          Si estás listo para llevar tu empresa al siguiente nivel, ¡hagámoslo
-          realidad juntos!.
+          No solo creo software; diseño experiencias digitales que impulsan el
+          éxito. <br />
+          Si estás listo para llevar tu proyecto al siguiente nivel, ¡hagámoslo
+          realidad!
         </p>
       </div>
 
@@ -129,10 +128,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              Nuestros<b> Servicios </b>
+              Mis<b> Servicios </b>
             </>
           }
-          description="En CodeDesign, tenemos soluciones integrales para impulsar tu negocio en el mundo digital."
+          description="Ofrezco soluciones integrales para impulsar tu negocio en el mundo digital."
           isComingSoon
         />
       </BentoTilt>
@@ -146,7 +145,7 @@ const Features = () => (
                 Desarrollo <b>Web</b>
               </>
             }
-            description="Creamos sitios web responsivos y modernos, optimizados para brindar una experiencia digital excepcional. Tu presencia en línea se transforma en una herramienta de éxito."
+            description="Creo sitios web responsivos y modernos, optimizados para brindar una experiencia digital excepcional. Tu presencia en línea se transforma en una herramienta de éxito."
             isComingSoon
           />
         </BentoTilt>
@@ -159,7 +158,7 @@ const Features = () => (
                 Aplicaciones <b>Multiplataforma</b>
               </>
             }
-            description="Lleva tus ideas a cualquier dispositivo. Desarrollamos soluciones que funcionan de forma consistente y eficaz en diferentes plataformas, garantizando rendimiento y accesibilidad."
+            description="Lleva tus ideas a cualquier dispositivo. Desarrollo soluciones que funcionan de forma consistente y eficaz en diferentes plataformas, garantizando rendimiento y accesibilidad."
             isComingSoon
           />
         </BentoTilt>
@@ -173,7 +172,7 @@ const Features = () => (
                 <b> a la Medida</b>
               </>
             }
-            description="Cada negocio es único. Creamos soluciones personalizadas que se adaptan a las necesidades específicas de tu empresa, impulsando eficiencia, crecimiento y competitividad."
+            description="Cada negocio es único. Creo soluciones personalizadas que se adaptan a las necesidades específicas de tu empresa, impulsando eficiencia, crecimiento y competitividad."
             isComingSoon
           />
         </BentoTilt>
@@ -186,9 +185,7 @@ const Features = () => (
                 DISEÑO <b>UI/UX</b>
               </>
             }
-            description="No solo se trata de tecnología, sino también de experiencia.
-              Diseñamos interfaces intuitivas y visualmente atractivas que
-              aseguran una interacción fluida y placentera para tus usuarios."
+            description="No solo se trata de tecnología, sino también de experiencia. Diseño interfaces intuitivas y visualmente atractivas que aseguran una interacción fluida y placentera para tus usuarios."
             isComingSoon
           />
         </BentoTilt>
@@ -201,7 +198,7 @@ const Features = () => (
                 Integración y <b>Automatización</b>
               </>
             }
-            description="Optimiza tus procesos con sistemas integrados y soluciones de automatización, permitiéndote centrarte en lo que realmente importa: el crecimiento de tu negocio."
+            description="Te ayudo a optimizar tus procesos con sistemas integrados y soluciones de automatización, permitiéndote centrarte en lo que realmente importa: el crecimiento de tu negocio."
             isComingSoon
           />
         </BentoTilt>

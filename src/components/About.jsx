@@ -30,7 +30,7 @@ const About = () => {
     <div id="acerca de" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <h2 className="font-general text-sm uppercase md:text-[50px]">
-          Bienvenido a <span style={{ fontWeight: "bold" }}>CodeDesign</span>
+          Bienvenido<span style={{ fontWeight: "bold" }}></span>
         </h2>
 
         <AnimatedTitle
@@ -39,10 +39,10 @@ const About = () => {
         />
 
         <div className="about-subtext">
-          <p>Somos CodeDesign</p>
+          <p>Soy Felipe Sánchez</p>
           <p className="text-gray-500">
-            un equipo apasionado por la tecnología y el diseño. Nos
-            especializamos en crear soluciones digitales que no solo funcionan,
+            un desarrollador apasionado por la tecnología y el diseño. Me
+            especializo en crear soluciones digitales que no solo funcionan,
             sino que también impactan.
           </p>
         </div>

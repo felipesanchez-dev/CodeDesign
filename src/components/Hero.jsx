@@ -37,8 +37,7 @@ const Hero = () => {
   return (
     <div
       className="relative min-h-screen w-screen overflow-x-hidden"
-      id="inicio"
-    >
+      id="inicio">
       {loading && (
         <div className="flex-center absolute z-[100] min-h-screen w-screen overflow-hidden bg-violet-50">
           <div className="three-body">
@@ -55,11 +54,10 @@ const Hero = () => {
 
         <div
           className="max-w-5xl mx-auto min-h-screen flex flex-col items-center justify-center text-center"
-          id="hero-content"
-        >
+          id="hero-content">
           <h2 className="animate-fade-in-up text-5xl sm:text-6xl md:text-[80px] max-w-[20ch] text-white font-bold pt-24 pb-4 text-balance">
-            Tu Futuro Digital Comienza Aquí{" "}
-            <span className="text-yellow-400">CodeDesign</span>
+            Tu Futuro Digital{" "}
+            <span className="text-yellow-400">Comienza Aquí</span>
           </h2>
 
           <h2 className="pt-6 pb-6 text-xl text-white font-bold max-w-2xl">
