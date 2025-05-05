@@ -74,8 +74,7 @@ const FloatingImage = () => {
 
             <svg
               className="invisible absolute size-0"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <filter id="flt_tag">
                   <feGaussianBlur
@@ -104,12 +103,16 @@ const FloatingImage = () => {
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               Soy Felipe Sánchez, un apasionado del desarrollo de software y el
-              diseño digital. Creé CodeDesign con la visión de transformar ideas
-              en soluciones tecnológicas innovadoras. Mi enfoque está en la
-              calidad, la creatividad y la funcionalidad, siempre buscando
-              llevar cada proyecto al siguiente nivel.
+              diseño digital. Mi visión es transformar ideas en soluciones
+              tecnológicas innovadoras. Mi enfoque está en la calidad, la
+              creatividad y la funcionalidad, siempre buscando llevar cada
+              proyecto al siguiente nivel.
             </p>
-            <a href="http://wa.me//573102452542">
+            <a
+              href="http://wa.me//573102452542"
+              target="_blank"
+              rel="noopener noreferrer">
+              {" "}
               <Button id="realm-btn" title="Disponible" containerClass="mt-5" />
             </a>
           </div>
